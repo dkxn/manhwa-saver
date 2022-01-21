@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="autoComplete.css">
+    <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <title>Manhwa Saver</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Manhwa Saver</h1>
+        <div class="search">
+            <div class="src-icon"><ion-icon name="search"></ion-icon></div>
+            <input type="text" placeholder="Search In Your List..." id="search" onkeyup="Filler()"  spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off">
+            <div class="clear-icon"><ion-icon name="close-outline"></ion-icon></div>
+        </div>
+        <hr>
+        <div class="add">
+            <div><input type="text" class="name" id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off"></div>
+            <div><input type="number" placeholder="Chapters" id="chapters"></div>
+            <div><button id="submit"> <ion-icon name="add"></ion-icon></button></div>
+        </div>
+        <hr>
+
+        <h2 class="list-h2">
+
+            <div><h2>List</h2></div>
+        <div>
+            <span class="info"><ion-icon name="information-circle"></ion-icon></span> 
+            <span id="delall"><ion-icon name="close-circle"></ion-icon></span>
+        </div>
+    </h2>
+        <div class="list" id="list"></div>
+        <hr>
+    </div>
+   
+    <footer>
+            
+       
+        <span class="footer-header">Used Libraries:</span>
+        <div>
+        <a class="footer-link" href="https://tarekraafat.github.io/autoComplete.js/#/">autoComplete.js <ion-icon name="heart"></ion-icon></a>
+        <a class="footer-link" href="https://sweetalert2.github.io/">sweetAlert2.js <ion-icon name="heart"></ion-icon></a>
+        <a class="footer-link" href="https://jquery.com/">jQuery.js <ion-icon name="heart"></ion-icon></a>
+        <a class="footer-link" href="https://ionic.io/">ionIcon <ion-icon name="heart"></ion-icon></a>
+        <div class="footer-bottom">
+        <h2>2022 - dekxonn.hu <span>View the ugly source code at <a href="#">GitHub</a> </span></h2> 
+    </div>
+
+ 
+</div>
+    </footer>
+    <script src="sweetalert/sweetalert2.all.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/autoComplete.min.js"></script>
+    <script type="module" src="autoComplete.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script  src="index.js"></script>
+</body>
+</html>
